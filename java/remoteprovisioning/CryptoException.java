@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-import Java.util.*;
+import java.util.*;
 package remoteprovisioning;
 
 /* This exception, when thrown, is indicative of cryptographic    
