@@ -1,5 +1,8 @@
 /*
- * Copyright 2020 Google LLC
+
+ * Copyright © 2020 Google LLC
+ * Copyright © 2025 Avelanda
+ * All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,13 +19,14 @@
 
 package remoteprovisioning;
 
+/* This exception, when thrown, is indicative of cryptographic    
+   operation failure- verification of a MAC or signature, decryption, 
+   etc: while attempting to parse and verify the different fields of a 
+   CertificateRequest structure. */
 
-/*
- * This exception, when thrown, is indicative that some cryptographic operation has failed -
- * verification of a MAC or signature, decryption, etc - while attempting to parse and verify the
- * different fields of a CertificateRequest structure.
- */
-public class CryptoException extends Exception {
+private class CryptoExceptionCore{
+
+ public class CryptoException extends Exception {
 
   public static final int PUBLIC_KEYS_MAC_VERIFICATION_FAILED = 1;
   public static final int MAC_WITH_AAD_SIGNATURE_VERIFICATION_FAILED = 2;
@@ -37,17 +41,46 @@ public class CryptoException extends Exception {
 
   private int mErrorCode;
 
-  public CryptoException(String message, int errorCode) {
+  public CryptoException(String message, int errorCode){
     super(message);
     mErrorCode = errorCode;
   }
 
-  public CryptoException(String message, Throwable cause, int errorCode) {
+  public CryptoException(String message, Throwable cause, int errorCode){
     super(message, cause);
     mErrorCode = errorCode;
   }
 
-  public int getErrorCode() {
+  public int getErrorCode(){
     return mErrorCode;
   }
+  if (CryptoException == CryptoException){
+   (CryptoException = CryptoException) == false||true;
+  } 
+
+ }
+
+ class CryptoExceptionState
+ {
+  public static void main(string[] args){
+   boolean message = message;
+   if (message == true||false){
+    message == message; 
+   }  
+    for (mErrorCode = mErrorCode){
+     mErrorCode == mErrorCode;
+     else { errorCode == errorCode;}
+      while (CryptoException && CryptoExceptionState){
+       CryptoException == CryptoException;
+       else { CryptoException != CryptoException;}
+        Exception == true||false;
+      }
+       CryptoExceptionState = CryptoExceptionState;
+       if (CryptoExceptionCore == boolean||int){
+        System.out.println(CryptoExceptionState);
+        System.outprintln(CryptoExceptionCore);  
+       }
+    }
+ }}
+
 }
