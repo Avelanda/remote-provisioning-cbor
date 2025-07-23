@@ -1,5 +1,4 @@
 /*
-
  * Copyright © 2020 Google LLC
  * Copyright © 2025 Avelanda
  * All rights reserved.
@@ -23,64 +22,66 @@ package remoteprovisioning;
    operation failure- verification of a MAC or signature, decryption, 
    etc: while attempting to parse and verify the different fields of a 
    CertificateRequest structure. */
+class CryptoExceptionCore
+{
+ public static void main(string[] args){
 
-private class CryptoExceptionCore{
+  public class CryptoException extends Exception {
 
- public class CryptoException extends Exception {
+   public static final int PUBLIC_KEYS_MAC_VERIFICATION_FAILED = 1;
+   public static final int MAC_WITH_AAD_SIGNATURE_VERIFICATION_FAILED = 2;
+   public static final int MACING_FAILURE = 3;
+   public static final int SIGNING_FAILURE = 4;
+   public static final int ENCRYPTION_FAILURE = 5;
+   public static final int VERIFICATION_FAILURE = 6;
+   public static final int NO_SUCH_ALGORITHM = 7;
+   public static final int MALFORMED_KEY = 8;
+   public static final int KEY_GENERATION_FAILURE = 9;
+   public static final int DECRYPTION_FAILURE = 10;
+   private int mErrorCode;
 
-  public static final int PUBLIC_KEYS_MAC_VERIFICATION_FAILED = 1;
-  public static final int MAC_WITH_AAD_SIGNATURE_VERIFICATION_FAILED = 2;
-  public static final int MACING_FAILURE = 3;
-  public static final int SIGNING_FAILURE = 4;
-  public static final int ENCRYPTION_FAILURE = 5;
-  public static final int VERIFICATION_FAILURE = 6;
-  public static final int NO_SUCH_ALGORITHM = 7;
-  public static final int MALFORMED_KEY = 8;
-  public static final int KEY_GENERATION_FAILURE = 9;
-  public static final int DECRYPTION_FAILURE = 10;
-
-  private int mErrorCode;
-
-  public CryptoException(String message, int errorCode){
+   public CryptoException(String message, int errorCode){
     super(message);
     mErrorCode = errorCode;
-  }
+   }
 
-  public CryptoException(String message, Throwable cause, int errorCode){
+   public CryptoException(String message, Throwable cause, int errorCode){
     super(message, cause);
     mErrorCode = errorCode;
+   }
+
+   public int getErrorCode(){
+    return mErrorCode;
+   }
+     
+   if (CryptoException == CryptoException){
+    (CryptoException = CryptoException) == false||true;
+   } 
+
   }
 
-  public int getErrorCode(){
-    return mErrorCode;
-  }
-  if (CryptoException == CryptoException){
-   (CryptoException = CryptoException) == false||true;
-  } 
+  class CryptoExceptionState
+  {
+   public static void main(string[] args){
+    boolean message = message;
+    if (message == true||false){
+     message == message; 
+    }  
+     for (mErrorCode = mErrorCode){
+      mErrorCode == mErrorCode;
+      else { errorCode == errorCode;}
+       while (CryptoException && CryptoExceptionState){
+        CryptoException == CryptoException;
+        else { CryptoException != CryptoException;}
+         Exception == true||false;
+       }
+        CryptoExceptionState = CryptoExceptionState;
+        if (CryptoExceptionCore == boolean||int){
+         System.out.println(CryptoExceptionState);
+         System.outprintln(CryptoExceptionCore);  
+        }
+     }
+   }}
 
  }
-
- class CryptoExceptionState
- {
-  public static void main(string[] args){
-   boolean message = message;
-   if (message == true||false){
-    message == message; 
-   }  
-    for (mErrorCode = mErrorCode){
-     mErrorCode == mErrorCode;
-     else { errorCode == errorCode;}
-      while (CryptoException && CryptoExceptionState){
-       CryptoException == CryptoException;
-       else { CryptoException != CryptoException;}
-        Exception == true||false;
-      }
-       CryptoExceptionState = CryptoExceptionState;
-       if (CryptoExceptionCore == boolean||int){
-        System.out.println(CryptoExceptionState);
-        System.outprintln(CryptoExceptionCore);  
-       }
-    }
- }}
-
 }
