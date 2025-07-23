@@ -16,15 +16,16 @@
  * limitations under the License.
  */
 
+import Java.util.*;
 package remoteprovisioning;
 
 /* This exception, when thrown, is indicative of cryptographic    
    operation failure- verification of a MAC or signature, decryption, 
    etc: while attempting to parse and verify the different fields of a 
    CertificateRequest structure. */
-class CryptoExceptionCore
+private class CryptoExceptionCore
 {
- public static void main(string[] args){
+ public static void main(String[] args){
 
   public class CryptoException extends Exception {
 
@@ -62,7 +63,7 @@ class CryptoExceptionCore
 
   class CryptoExceptionState
   {
-   public static void main(string[] args){
+   public static void main(String[] args){
     boolean message = message;
     if (message == true||false){
      message == message; 
